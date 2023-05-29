@@ -20,7 +20,6 @@
     const text = document.querySelector(".typing");
     const result = document.querySelector(".result");
     const thanks = document.querySelector(".thanks");
-
     function show() {
       result.innerHTML = `you are typing this ${this.value}`;
       setTimeout(() => {
@@ -29,5 +28,11 @@
     }
 
     text.addEventListener("keyup", show);
+
+    function Person(name) {
+      this.name = name;
+    }
+    const shakib = new Person("shakib");
+    console.log(shakib );
   </script>
 </html>
